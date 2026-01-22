@@ -1,0 +1,175 @@
+/* --- Top Header Premium Design --- */
+.be-top-header.premium-nav {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3) !important;
+    height: 70px !important;
+    transition: all 0.3s ease;
+}
+
+.navbar-header {
+    height: 70px !important;
+    display: flex !important;
+    align-items: center !important;
+    padding: 0 25px !important;
+}
+
+.navbar-brand-premium {
+    display: flex !important;
+    align-items: center !important;
+    text-decoration: none !important;
+    gap: 15px;
+}
+
+.navbar-brand-premium img {
+    height: 35px !important;
+    width: auto !important;
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.2));
+}
+
+.brand-divider {
+    width: 1px;
+    height: 24px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.user-id {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.be-right-navbar {
+    height: 70px !important;
+    display: flex !important;
+    align-items: center !important;
+    padding-right: 25px !important;
+}
+
+.be-user-nav>li>a {
+    padding: 0 15px !important;
+    height: 70px !important;
+    display: flex !important;
+    align-items: center !important;
+    background: transparent !important;
+}
+
+.user-avatar-wrapper {
+    position: relative;
+    width: 42px;
+    height: 42px;
+}
+
+.user-avatar-wrapper img {
+    width: 42px !important;
+    height: 42px !important;
+    border-radius: 12px !important;
+    border: 2px solid rgba(255, 255, 255, 0.2) !important;
+    object-fit: cover !important;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2px;
+}
+
+.status-indicator {
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid #0f172a;
+}
+
+.status-indicator.online {
+    background: #10b981;
+    box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.2);
+}
+
+.nav-user-info {
+    padding: 0 15px;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.user-display-name {
+    color: #fff !important;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    letter-spacing: 0.2px;
+}
+
+/* Dropdown Premium Stylings */
+.be-user-nav .dropdown-menu {
+    top: 70px !important;
+    right: 0 !important;
+    width: 240px !important;
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 16px !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    padding: 8px !important;
+    margin-top: 10px !important;
+    animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.user-info {
+    background: #f8fafc !important;
+    border-radius: 12px !important;
+    padding: 15px !important;
+    margin-bottom: 8px !important;
+}
+
+.user-info .user-name {
+    color: #1e293b !important;
+    font-weight: 700 !important;
+    font-size: 15px !important;
+}
+
+.user-info .user-position {
+    font-size: 12px !important;
+    color: #64748b !important;
+    margin-top: 2px !important;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.be-user-nav .dropdown-menu>li>a {
+    border-radius: 8px !important;
+    padding: 10px 15px !important;
+    color: #475569 !important;
+    font-weight: 500 !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px;
+    transition: all 0.2s ease !important;
+}
+
+.be-user-nav .dropdown-menu>li>a:hover {
+    background: #f1f5f9 !important;
+    color: #2563eb !important;
+}
+
+.be-user-nav .dropdown-menu>li>a .icon {
+    font-size: 18px !important;
+    margin-right: 0 !important;
+    opacity: 0.7;
+}
+
+.be-user-nav .dropdown-menu>li>a:hover .icon {
+    opacity: 1;
+}

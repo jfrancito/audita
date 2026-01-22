@@ -1,0 +1,325 @@
+/* --- Variables del Sistema --- */
+:root {
+    --primary-color: #2563eb;
+    --primary-hover: #1d4ed8;
+    --bg-light: #f8fafc;
+    --border-color: #e2e8f0;
+    --text-main: #334155;
+    --text-muted: #64748b;
+    --input-height: 42px;
+}
+
+/* --- Estilos del Panel de Filtros --- */
+.panel-table {
+    border-radius: 12px !important;
+    border: none !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05) !important;
+    background: #fff;
+    margin-bottom: 25px;
+}
+
+.panel-heading {
+    background: var(--bg-light) !important;
+    border-bottom: 1px solid var(--border-color) !important;
+    font-weight: 700 !important;
+    color: var(--text-main) !important;
+    padding: 15px 20px !important;
+    font-size: 1.1rem !important;
+    border-top-left-radius: 12px !important;
+    border-top-right-radius: 12px !important;
+}
+
+.panel-body {
+    padding: 25px 20px !important;
+}
+
+.filtro-row {
+    margin-bottom: 0px;
+}
+
+/* --- Labels y Grupos --- */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block !important;
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    color: var(--text-muted) !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    margin-bottom: 8px !important;
+}
+
+/* --- Select2 Premium --- */
+.select2-container--default .select2-selection--single {
+    height: var(--input-height) !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 8px !important;
+    background-color: #fff !important;
+    transition: all 0.2s ease !important;
+}
+
+.select2-container--default.select2-container--focus .select2-selection--single {
+    border-color: var(--primary-color) !important;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1) !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: var(--input-height) !important;
+    padding-left: 15px !important;
+    color: var(--text-main) !important;
+    font-weight: 500 !important;
+    font-size: 13px !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: var(--input-height) !important;
+    right: 10px !important;
+}
+
+/* --- DateTimePicker Premium --- */
+.input-group.date {
+    display: table !important;
+    width: 100% !important;
+}
+
+.input-group.date .form-control {
+    display: table-cell !important;
+    float: none !important;
+    height: var(--input-height) !important;
+    border: 1px solid var(--border-color) !important;
+    border-right: none !important;
+    border-radius: 8px 0 0 8px !important;
+    padding: 10px 15px !important;
+    font-weight: 500 !important;
+    font-size: 13px !important;
+    color: var(--text-main) !important;
+    box-shadow: none !important;
+    background: #fff !important;
+}
+
+.input-group-addon.btn-primary {
+    background-color: var(--bg-light) !important;
+    border: 1px solid var(--border-color) !important;
+    color: var(--primary-color) !important;
+    border-radius: 0 8px 8px 0 !important;
+    width: 45px !important;
+    display: table-cell !important;
+    vertical-align: middle !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease !important;
+    padding: 0 !important;
+}
+
+.input-group-addon.btn-primary:hover {
+    background-color: var(--primary-color) !important;
+    color: #fff !important;
+    border-color: var(--primary-color) !important;
+}
+
+.input-group-addon.btn-primary i {
+    font-size: 18px !important;
+}
+
+/* --- Botón Buscar --- */
+.btn-primary.btn-lg {
+    height: var(--input-height) !important;
+    border-radius: 8px !important;
+    padding: 0 30px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    font-size: 12px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2) !important;
+    margin-top: 0px !important;
+}
+
+.btn-primary.btn-lg:hover {
+    background-color: var(--primary-hover) !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 6px 15px rgba(37, 99, 235, 0.3) !important;
+}
+
+.btn-primary.btn-lg i {
+    margin-right: 10px !important;
+    font-size: 18px !important;
+    margin-top: 0 !important;
+}
+
+/* --- Cargando --- */
+.loading-trigger {
+    height: var(--input-height) !important;
+    display: flex !important;
+    align-items: center !important;
+    color: var(--text-muted) !important;
+    font-size: 12px !important;
+    font-style: italic !important;
+}
+
+/* --- Separación entre Filtros y Reporte --- */
+.divider-report {
+    position: relative;
+    margin: 40px 0 30px;
+    text-align: center;
+}
+
+.divider-report hr {
+    border: 0;
+    border-top: 2px solid #e2e8f0;
+}
+
+.divider-text {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fdfdfd;
+    padding: 0 20px;
+    color: var(--primary-color);
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+/* Fix Datetimepicker Arrows and Visibility */
+.datetimepicker {
+    z-index: 10000 !important;
+}
+
+.datetimepicker .datetimepicker-dropdown-bottom-right:before,
+.datetimepicker .datetimepicker-dropdown-bottom-right:after,
+.datetimepicker .datetimepicker-dropdown-bottom-left:before,
+.datetimepicker .datetimepicker-dropdown-bottom-left:after {
+    display: none !important;
+}
+
+.datetimepicker table tr td.day:hover,
+.datetimepicker table tr td.day.focused {
+    background: #eeeeee;
+    cursor: pointer;
+}
+
+.datetimepicker .prev i,
+.datetimepicker .next i {
+    font-family: 'Material-Design-Iconic-Font' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.datetimepicker .prev i:before {
+    content: '\f2f4' !important;
+}
+
+.datetimepicker .next i:before {
+    content: '\f2fb' !important;
+}
+
+/* zmdi-chevron-right */
+
+.datetimepicker-days .prev,
+.datetimepicker-days .next,
+.datetimepicker-months .prev,
+.datetimepicker-months .next,
+.datetimepicker-years .prev,
+.datetimepicker-years .next {
+    cursor: pointer;
+    background: #f8fafc;
+    border-radius: 4px;
+}
+
+.datetimepicker-days .prev:hover,
+.datetimepicker-days .next:hover {
+    background: #e2e8f0;
+}
+
+/* --- Estilos de la Cabecera de Reportes --- */
+.header-report-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 25px;
+    background: #fff;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.header-report-left,
+.header-report-right {
+    flex: 1;
+}
+
+.header-report-center {
+    flex: 2;
+    text-align: center;
+}
+
+.header-report-center h3 {
+    margin: 0 0 5px 0;
+    font-weight: 800;
+    color: var(--text-main);
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.header-report-center p {
+    color: var(--text-muted);
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.table-info-header {
+    font-size: 13px;
+    line-height: 1.8;
+    color: var(--text-main);
+}
+
+.table-info-header td {
+    padding-right: 12px;
+}
+
+.logo-report {
+    text-align: right;
+    margin-bottom: 12px;
+}
+
+.logo-report img {
+    max-width: 140px;
+    height: auto;
+}
+
+.info-user-report {
+    text-align: right;
+    color: var(--text-muted);
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.btn-export-excel {
+    margin: 5px 10px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border-radius: 8px !important;
+}
+
+.btn-export-excel:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
