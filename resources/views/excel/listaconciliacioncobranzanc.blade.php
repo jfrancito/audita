@@ -28,6 +28,7 @@
                 <th>TXT_REFERENCIA</th>
                 <th>CAN_IMPORTE</th>
                 <th>TOTAL</th>
+                <th>FEC_HABILITACION</th>
             </tr>
         </thead>
         <tbody>
@@ -53,6 +54,7 @@
                     <td>{{ $item->TXT_REFERENCIA }}</td>
                     <td align="right">{{ number_format($item->CAN_IMPORTE, 2) }}</td>
                     <td align="right">{{ number_format($item->CAN_IMPORTE, 2, '.', '') }}</td>
+                    <td>{{ $item->FEC_HABILITACION ? date('d/m/Y', strtotime($item->FEC_HABILITACION)) : '' }}</td>
                 </tr>
             @endforeach
         </tbody>
