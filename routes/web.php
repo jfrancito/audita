@@ -36,6 +36,13 @@ Route::group(['middleware' => ['authaw']], function () {
 	Route::post('/reporte-conciliacion-cobranza-excel', 'GestionConciliacionCobranzaController@actionExportarConciliacionCobranzaExcel');
 
 
+	Route::any('/gestion-de-asignacion-50kg/{idopcion}', 'GestionAsignacion50kgController@actionListarAsignacion50kg');
+	Route::post('/ajax-listar-asignacion-50kg', 'GestionAsignacion50kgController@actionAjaxListarAsignacion50kg');
+	Route::post('/exportar-excel-asignacion-50kg', 'GestionAsignacion50kgController@actionExportarExcelAsignacion50kg');
+
+
+
+
 
 });
 

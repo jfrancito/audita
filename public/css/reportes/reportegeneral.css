@@ -190,10 +190,7 @@
     text-transform: uppercase;
 }
 
-/* Fix Datetimepicker Arrows and Visibility */
-.datetimepicker {
-    z-index: 10000 !important;
-}
+
 
 .datetimepicker .datetimepicker-dropdown-bottom-right:before,
 .datetimepicker .datetimepicker-dropdown-bottom-right:after,
