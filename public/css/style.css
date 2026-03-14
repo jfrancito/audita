@@ -20462,3 +20462,7 @@ fieldset[disabled] .full-calendar .fc-button.active {
     margin-bottom: 0px !important;
   }
 }
+
+.main-content.container-fluid {
+  margin-top: 15px !important;
+}

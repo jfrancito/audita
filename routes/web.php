@@ -35,12 +35,15 @@ Route::group(['middleware' => ['authaw']], function () {
 	Route::post('/ajax-listar-conciliacion-cobranza', 'GestionConciliacionCobranzaController@actionAjaxListarConciliacionCobranza');
 	Route::post('/reporte-conciliacion-cobranza-excel', 'GestionConciliacionCobranzaController@actionExportarConciliacionCobranzaExcel');
 
-
 	Route::any('/gestion-de-asignacion-50kg/{idopcion}', 'GestionAsignacion50kgController@actionListarAsignacion50kg');
 	Route::post('/ajax-listar-asignacion-50kg', 'GestionAsignacion50kgController@actionAjaxListarAsignacion50kg');
 	Route::post('/exportar-excel-asignacion-50kg', 'GestionAsignacion50kgController@actionExportarExcelAsignacion50kg');
 
 
+	
+	Route::any('/gestion-de-acuerdos-comerciales/{idopcion}', 'GestionAcuerdoComercialController@actionListarAcuerdoComercial');
+	Route::post('/ajax-listar-acuerdos-comerciales', 'GestionAcuerdoComercialController@actionAjaxListarAcuerdoComercial');
+	Route::post('/exportar-excel-acuerdos-comerciales', 'GestionAcuerdoComercialController@actionExportarExcelAcuerdoComercial');
 
 
 
