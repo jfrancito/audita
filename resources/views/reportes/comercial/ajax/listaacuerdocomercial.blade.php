@@ -177,7 +177,8 @@
                                         <th class="text-center">TIPO</th>
                                         <th class="text-center">SERIE</th>
                                         <th class="text-center">NRO. DOC.</th>
-                                        <th class="text-center" style="min-width: 90px;">FECHA</th>
+                                        <th class="text-center" style="min-width: 90px;">FECHA EMISIÓN</th>
+                                        <th class="text-center" style="min-width: 120px;">FECHA REGISTRO</th>
                                         <th class="text-center" style="min-width: 180px;">EMPRESA</th>
                                         <th class="text-center">SUBTOTAL</th>
                                         <th class="text-center">IMPUESTO</th>
@@ -202,6 +203,7 @@
                                             <td class="text-center">{{ $reg->NRO_SERIE }}</td>
                                             <td class="text-center">{{ $reg->NRO_DOC }}</td>
                                             <td class="text-center">{{ date('d/m/Y', strtotime($reg->FEC_EMISION)) }}</td>
+                                            <td class="text-center">{{ $reg->FEC_USUARIO_CREA_AUD ? date('d/m/Y H:i:s', strtotime($reg->FEC_USUARIO_CREA_AUD)) : '---' }}</td>
                                             <td>{{ $reg->EMPRESA }}</td>
                                             <td class="text-right">S/ {{ number_format($reg->CAN_SUB_TOTAL, 2) }}</td>
                                             <td class="text-right">S/ {{ number_format($reg->CAN_IMPUESTO_VTA, 2) }}</td>

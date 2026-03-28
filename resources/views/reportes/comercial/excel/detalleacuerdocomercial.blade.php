@@ -14,6 +14,7 @@
                 <th style="font-weight: bold; border: 1px solid #000; text-align: center;">SERIE</th>
                 <th style="font-weight: bold; border: 1px solid #000; text-align: center;">NRO. DOC.</th>
                 <th style="font-weight: bold; border: 1px solid #000; text-align: center;">FECHA</th>
+                <th style="font-weight: bold; border: 1px solid #000; text-align: center;">FECHA REGISTRO</th>
                 <th style="font-weight: bold; border: 1px solid #000; text-align: center;">EMPRESA</th>
                 <th style="font-weight: bold; border: 1px solid #000; text-align: center;">SUBTOTAL</th>
                 <th style="font-weight: bold; border: 1px solid #000; text-align: center;">IMPUESTO</th>
@@ -37,6 +38,7 @@
                     <td style="border: 1px solid #000; text-align: center;">{{ $reg->NRO_SERIE }}</td>
                     <td style="border: 1px solid #000; text-align: center;">{{ $reg->NRO_DOC }}</td>
                     <td style="border: 1px solid #000; text-align: center;">{{ date('d/m/Y', strtotime($reg->FEC_EMISION)) }}</td>
+                    <td style="border: 1px solid #000; text-align: center;">{{ $reg->FEC_USUARIO_CREA_AUD ? date('d/m/Y H:i:s', strtotime($reg->FEC_USUARIO_CREA_AUD)) : '---' }}</td>
                     <td style="border: 1px solid #000; text-align: left;">{{ $reg->EMPRESA }}</td>
                     <td style="border: 1px solid #000; text-align: right;">{{ number_format($reg->CAN_SUB_TOTAL, 2) }}</td>
                     <td style="border: 1px solid #000; text-align: right;">{{ number_format($reg->CAN_IMPUESTO_VTA, 2) }}</td>
